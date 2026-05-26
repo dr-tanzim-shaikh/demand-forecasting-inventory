@@ -130,6 +130,14 @@ Dataset page: https://www.kaggle.com/competitions/demand-forecasting-kernels-onl
 
 The dataset provides historical store-item sales data suitable for time-series demand forecasting.
 
+## Citation
+
+This project uses the Kaggle Store Item Demand Forecasting dataset.
+
+Dataset page: https://www.kaggle.com/competitions/demand-forecasting-kernels-only
+
+If using this repository, please cite or acknowledge the original dataset source.
+
 ## Limitations
 
 This is a first-version portfolio project.
