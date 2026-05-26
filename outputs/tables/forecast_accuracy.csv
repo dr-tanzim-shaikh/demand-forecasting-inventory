@@ -1,0 +1,5 @@
+"model","MAE","RMSE","MAPE"
+"Naive forecast",8.778,10.148,40.633
+"7-day moving average",5.06,6.299,34.053
+"Simple exponential smoothing",5.295,6.544,35.96
+"ARIMA(1,0,1)",4.911,6.126,32.778
