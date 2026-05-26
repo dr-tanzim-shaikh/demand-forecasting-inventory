@@ -122,6 +122,14 @@ source("code/03_forecasting_models.R")
 source("code/04_inventory_decision_rules.R")
 ```
 
+## Data Source
+
+This project uses the Kaggle Store Item Demand Forecasting dataset.
+
+Dataset page: https://www.kaggle.com/competitions/demand-forecasting-kernels-only
+
+The dataset provides historical store-item sales data suitable for time-series demand forecasting.
+
 ## Limitations
 
 This is a first-version portfolio project.
@@ -131,14 +139,6 @@ The models are intentionally simple. The project does not use advanced machine l
 The analysis uses one store-item demand series only.
 
 The best model still has a MAPE of 32.778%, so the forecasts should be treated as decision-support estimates rather than precise demand predictions.
-
-## Data Source
-
-This project uses the Kaggle Store Item Demand Forecasting dataset.
-
-Dataset page: https://www.kaggle.com/competitions/demand-forecasting-kernels-only
-
-The dataset provides historical store-item sales data suitable for time-series demand forecasting.
 
 ## Tools
 
