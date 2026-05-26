@@ -74,7 +74,9 @@ z_value <- qnorm(service_level)
 
 lead_time_forecast <- forecast_results[1:lead_time_days, ]
 
-expected_demand_during_lead_time <- sum(lead_time_forecast[[forecast_column]])
+expected_demand_during_lead_time <- sum(
+  lead_time_forecast[[forecast_column]]
+)
 
 # ------------------------------------------------------------
 # 6. Demand variability
@@ -94,7 +96,8 @@ safety_stock <- z_value * sigma_demand * sqrt(lead_time_days)
 
 deterministic_reorder_point <- expected_demand_during_lead_time
 
-uncertainty_aware_reorder_point <- expected_demand_during_lead_time + safety_stock
+uncertainty_aware_reorder_point <- expected_demand_during_lead_time +
+  safety_stock
 
 # ------------------------------------------------------------
 # 8. Inventory decision summary
@@ -199,9 +202,20 @@ dev.off()
 
 cat("Inventory decision rules completed successfully.\n")
 cat("Best forecasting model:", best_model, "\n")
-cat("Expected demand during lead time:", round(expected_demand_during_lead_time, 2), "\n")
+cat(
+  "Expected demand during lead time:",
+  round(expected_demand_during_lead_time, 2),
+  "\n"
+)
 cat("Safety stock:", round(safety_stock, 2), "\n")
-cat("Deterministic reorder point:", round(deterministic_reorder_point, 2), "\n")
-cat("Uncertainty-aware reorder point:", round(uncertainty_aware_reorder_point, 2), "\n")
+cat(
+  "Deterministic reorder point:",
+  round(deterministic_reorder_point, 2),
+  "\n"
+)
+cat(
+  "Uncertainty-aware reorder point:",
+  round(uncertainty_aware_reorder_point, 2),
+  "\n"
+)
 cat("Inventory decision outputs saved in outputs/tables/ and outputs/plots/\n")
-
