@@ -49,7 +49,7 @@ accuracy_metrics <- function(actual, forecast) {
   mae <- mean(abs(actual - forecast))
   rmse <- sqrt(mean((actual - forecast)^2))
   mape <- mean(abs((actual - forecast) / actual)) * 100
-  
+
   return(c(
     MAE = round(mae, 3),
     RMSE = round(rmse, 3),
